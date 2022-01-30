@@ -20,7 +20,6 @@ public class ToDoController {
 
     @GetMapping
     public ResponseEntity<List<ToDo>> getAllToDos() {
-        System.out.println("hello");
         return new ResponseEntity<>(
                 toDoService.getAllToDos(),
                 HttpStatus.OK
